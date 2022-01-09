@@ -9,3 +9,4 @@ df2 = pd.DataFrame(comp_list) #ここは変換する必要ないかもしれな�
 df3 = pd.concat([df1,df2]).drop_duplicates(subset=['order_no','estimate','work_ym'], keep=False)
 dict_df3 = df3.to_dict('records')
 print(df1,'\n\n',df2,'\n\n',dict_df3)
+#test
