@@ -1,15 +1,25 @@
+def change(l_dict):
+
+    if l_dict['name'] is None:
+        l_dict['name'] = "yamada"
+    return l_dict
 
 def main():
-    test = 'test1'
-    test2 = scopetest(test)
-    print(test2)
+    stack_list = []
+    l_records = [{'order_no' : 'R001', 'name' : 'shinmori'}, {'order_no' : 'R002', 'name' : None}]
+
+    for l_record in l_records:
+        l_dict = dict()
+        l_dict['order_no'] = l_record['order_no']
+        l_dict['name'] = l_record['name']
+
+        l_dict = change(l_dict)
+
+        stack_list.append(l_dict)
+    print(stack_list)
 
 
-def scopetest(test):
-    print(test)
-    test = "test2"
-    print(test)
-    return test
+
 
 if __name__ == '__main__':
     main()
