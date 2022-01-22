@@ -6,7 +6,8 @@ def change(l_dict):
 
 def main():
     stack_list = []
-    l_records = [{'order_no' : 'R001', 'name' : 'shinmori'}, {'order_no' : 'R002', 'name' : None}]
+    l_records = [{'order_no' : 'R001', 'name' : 'yamada'}, 
+        {'order_no' : 'R002', 'name' : None}, {'order_no' : 'R003', 'name' : 'suzuki'}, {'order_no' : 'R004', 'name' : None}]
 
     for l_record in l_records:
         l_dict = dict()
