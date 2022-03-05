@@ -1,5 +1,11 @@
 order_no,pre,city
+<<<<<<< HEAD
 1,toukyou,shinjuku
 2,aiti,
 3,oosaka,oosaka
+=======
+1,tokyou,shinjuku
+2,aichi,nagaya
+3,osaka,osaka
+>>>>>>> 69a17988c883bf0df90c285820b5ceb9615fb448
 4,fukuoka,fukuoka
