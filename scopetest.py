@@ -1,8 +1,8 @@
+# パイソンではリストや辞書型を関数の引数として渡した場合、実態が渡される（参照型）
 def change(l_dict):
 
     if l_dict['name'] is None:
         l_dict['name'] = "yamada"
-    return l_dict
 
 def main():
     stack_list = []
@@ -14,13 +14,10 @@ def main():
         l_dict['order_no'] = l_record['order_no']
         l_dict['name'] = l_record['name']
 
-        l_dict = change(l_dict)
+        change(l_dict)
 
         stack_list.append(l_dict)
     print(stack_list)
-
-
-
 
 if __name__ == '__main__':
     main()
