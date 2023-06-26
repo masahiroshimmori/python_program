@@ -2,7 +2,7 @@
 def change(l_dict):
 
     if l_dict['name'] is None:
-        l_dict['name'] = "yamada"
+        l_dict['name'] = "tanaka"
 
 def main():
     stack_list = []
